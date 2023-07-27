@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import bookshelfImage from "../images/bookstore.jpg";
 
@@ -13,7 +14,9 @@ const Home = () => {
           <h2 style={{ fontSize: "50px" }}>
             Empowering Minds, One Book at a Time: Your Trusted Bookstore Online.
           </h2>
-          <button className="viewBook my-3">View Books</button>
+          <Link to="/books" className="viewBook my-3">
+            View Books
+          </Link>
         </div>
         <div
           className="col-lg-6 d-flex justify-content-center align-items-center flex-column"
