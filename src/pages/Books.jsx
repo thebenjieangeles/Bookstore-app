@@ -3,7 +3,7 @@ import axios from "axios";
 import BooksSection from "../components/BooksSection";
 
 const Books = () => {
-  const [data, setData] = useState([]);
+  const [Data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,8 +25,8 @@ const Books = () => {
       <div className="d-flex justify-content-center align-items-center py-3">
         <h4 className="text-white">Books section</h4>
       </div>
-      {data.length ? (
-        <BooksSection data={data} />
+      {Data ? (
+        <BooksSection data={Data} />
       ) : (
         <div className="text-white">Loading...</div>
       )}
